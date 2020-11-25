@@ -22,15 +22,15 @@ class ParentNestedScrollView : NestedScrollView {
 
 
     override fun onNestedPreScroll(target: View, dx: Int, dy: Int, consumed: IntArray) {
-        dispatchNestedPreScroll(dx, dy, consumed, null, TYPE_TOUCH)
-        if (dy - consumed[1] > 0) {
-            onNestedScroll(target, dx, dy, dx - consumed[0], dy - consumed[1], TYPE_TOUCH, consumed)
-        }
+        onNestedPreScroll(target, dx, dy, consumed, TYPE_TOUCH)
     }
 
     override fun onNestedPreScroll(target: View, dx: Int, dy: Int, consumed: IntArray, type: Int) {
-        dispatchNestedPreScroll(dx, dy, consumed, null, TYPE_TOUCH)
+        //按照嵌套滑动的思路，先将滑动继续向上分发
+        super.onNestedPreScroll(target, dx, dy, consumed, TYPE_TOUCH)
+        //当还有滑动距离则自己尝试滑动， 只有向上滑才需要处理
         if (dy - consumed[1] > 0) {
+            //dy - consumed[1] > 0 表示向上滑
             onNestedScroll(target, dx, dy, dx - consumed[0], dy - consumed[1], TYPE_TOUCH, consumed)
         }
     }
