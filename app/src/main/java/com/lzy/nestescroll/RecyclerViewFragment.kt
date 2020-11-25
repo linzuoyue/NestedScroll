@@ -48,9 +48,9 @@ class RecyclerViewFragment : Fragment() {
     }
 
     private var i = 0
-    private val data: List<String>
+    private val data: ArrayList<String>
         private get() {
-            val data: MutableList<String> =
+            val data: ArrayList<String> =
                 ArrayList()
             val tempI = i
             while (i < tempI + 10) {
