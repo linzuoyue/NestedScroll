@@ -42,7 +42,8 @@ class ChildRecyclerView : RecyclerView {
                 val dy: Float = y - downY
                 //通过距离差判断方向
                 when (getOrientation(dx, dy)) {
-                    //如果是横向滑动则允许拦截
+                    //1.如果是横向滑动则允许拦截;
+                    //2.如果 ChildRecyclerView 在ViewPager中 那么ViewPager就会拦截后续的事件，后续事件不会再分发到ChildRecyclerView
                     ORIENTATION_R, ORIENTATION_L -> parent.requestDisallowInterceptTouchEvent(false)
                 }
             }

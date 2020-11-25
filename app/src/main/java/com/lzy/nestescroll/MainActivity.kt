@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, NestedViewPagerActivityTest1::class.java)
                 startActivity(intent)
             }
-//            R.id.nested_scroll_test2 -> {
-//                val intent = Intent(this, NestedViewPagerActivityTest2_2::class.java)
-//                startActivity(intent)
-//            }
+            R.id.nested_scroll_test2 -> {
+                val intent = Intent(this, NestedViewPagerActivityTest2::class.java)
+                startActivity(intent)
+            }
 //            R.id.nested_scroll_test3 -> {
 //                val intent = Intent(this, NestedViewPagerActivityTest3::class.java)
 //                startActivity(intent)

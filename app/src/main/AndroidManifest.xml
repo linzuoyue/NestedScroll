@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".NestedViewPagerActivityTest1" />
+        <activity android:name=".NestedViewPagerActivityTest2" />
     </application>
 
 </manifest>
