@@ -1,4 +1,4 @@
-package com.lzy.nestescroll.views
+package com.lzy.nestescroll.views.nestedscroll
 
 import android.content.Context
 import android.util.AttributeSet

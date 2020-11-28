@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.lzy.nestescroll.views.ParentNestedScrollView
+        <com.lzy.nestescroll.views.nestedscroll.ParentNestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -76,7 +76,7 @@
                 </LinearLayout>
 
             </LinearLayout>
-        </com.lzy.nestescroll.views.ParentNestedScrollView>
+        </com.lzy.nestescroll.views.nestedscroll.ParentNestedScrollView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </layout>

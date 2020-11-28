@@ -2,6 +2,7 @@ package com.lzy.nestescroll.views
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.lzy.nestescroll.views.coordinator.CoordinatorRecyclerView
 import com.lzy.nestescroll.views.customview.BaseCustomViewModel
 import com.lzy.nestescroll.views.customview.ICustomView
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CoordinatorRecyclerView.LayoutParams">
+
+        //提供协调的ViewId,不提供说明
+        <attr name="coordinator_id" format="reference"/>
+        //依赖的id
+        <attr name="coordinator_dependence_id" format="reference"/>
+        //behavior
+        <attr name="coordinator_behavior" format="string"/>
+
+    </declare-styleable>
+
+
+
+
+
+</resources>

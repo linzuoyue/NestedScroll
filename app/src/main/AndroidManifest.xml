@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".NestedViewPagerActivityTest1" />
         <activity android:name=".NestedViewPagerActivityTest2" />
+        <activity android:name=".CoordinatorRecyclerViewActivityTest" />
     </application>
 
 </manifest>
